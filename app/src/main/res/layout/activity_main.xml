@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crazynet.simulationtask.MainActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingBottom="8dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:padding="8dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TableLayout
+                android:id="@+id/my_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/start"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:id="@+id/table_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/customerNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No "
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/come"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Come "
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/Period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Period "
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/cstart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start "
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End  "
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/wait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wait "
+                        android:textColor="@android:color/black"
+                        />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/my_table"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+               >
+
+               <TableRow
+                   android:id="@+id/table_row"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                  >
+
+                   <TextView
+                       android:id="@+id/Time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Time "
+                       android:layout_marginRight="5dp"
+                       android:textColor="@android:color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/customer1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Customer 1 "
+                       android:layout_marginRight="5dp"
+                       android:textColor="@android:color/black"
+                       />
+                   <TextView
+                       android:id="@+id/customer2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Customer 2 "
+                       android:layout_marginRight="5dp"
+                       android:textColor="@android:color/black"
+                       />
+                   <TextView
+                       android:id="@+id/customer3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Customer 3 "
+                       android:layout_marginRight="5dp"
+                       android:textColor="@android:color/black"
+                       />
+                   <TextView
+                       android:id="@+id/customer4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Customer 4 "
+                       android:textColor="@android:color/black"
+                       />
+
+                </TableRow>
+            </TableLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
